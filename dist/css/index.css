@@ -1,0 +1,605 @@
+@charset "UTF-8";
+/* 一像素下边框 */
+/* 一像素上边框 */
+/* 根据像素比缩放1px像素边框 */
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  .border-1px::before {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .border-1px::before {
+    -webkit-transform: scaleY(0.33333);
+            transform: scaleY(0.33333);
+  }
+}
+
+/* 根据像素比来使用 2x 图 3x 图 */
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance {
+  zoom: 1;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after {
+  clear: both;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after {
+  content: '';
+  display: table;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  position: relative;
+  /* 每个页面的内容 */
+}
+
+#app .footer-guide {
+  position: relative;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app .footer-guide::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+#app .footer-guide .guide-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.05rem;
+  color: #999999;
+}
+
+#app .footer-guide .guide-item.on {
+  color: #02a774;
+}
+
+#app .footer-guide .guide-item span {
+  font-size: 0.12rem;
+  margin-top: 0.02rem;
+  margin-bottom: 0.02rem;
+}
+
+#app .footer-guide .guide-item span .iconfont {
+  font-size: 0.22rem;
+}
+
+#app .content > div {
+  /* 决定那个页面显示 */
+  display: none;
+}
+
+#app .content > div.on {
+  /* 有类on就显示 */
+  display: block;
+}
+
+#app .content > div > section .header {
+  /* 头部公共css */
+  background-color: #02a774;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.45rem;
+}
+
+#app .content > div > section .header .header-search {
+  position: absolute;
+  left: 0.15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10%;
+  height: 50%;
+}
+
+#app .content > div > section .header .header-search .iconfont {
+  font-size: 0.22rem;
+  color: #ffffff;
+}
+
+#app .content > div > section .header .header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  color: #ffffff;
+  font-size: 0.22rem;
+  text-align: center;
+}
+
+#app .content > div > section.msite {
+  /* 首页 */
+  width: 100%;
+}
+
+#app .content > div > section.msite .msite-header {
+  background-color: #02a774;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.45rem;
+}
+
+#app .content > div > section.msite .msite-header .header-search {
+  position: absolute;
+  left: 0.15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10%;
+  height: 50%;
+}
+
+#app .content > div > section.msite .msite-header .header-search .icon-sousuo {
+  font-size: 0.25rem;
+  color: #ffffff;
+}
+
+#app .content > div > section.msite .msite-header .header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-left: -5%;
+}
+
+#app .content > div > section.msite .msite-header .header-title .header-title-text {
+  font-size: 0.2rem;
+  color: #ffffff;
+  display: block;
+}
+
+#app .content > div > section.msite .msite-header .header-login {
+  font-size: 0.14rem;
+  color: #ffffff;
+  position: absolute;
+  right: 0.15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#app .content > div > section.msite .msite-header .header-login .header-login-text {
+  color: #ffffff;
+}
+
+#app .content > div > section.msite .msite-nav {
+  position: relative;
+  margin-top: 0.45rem;
+  height: 2rem;
+  background: #ffffff;
+}
+
+#app .content > div > section.msite .msite-nav::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper .swiper-slide .link-to-food {
+  width: 25%;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper .swiper-slide .link-to-food .food-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.1rem;
+  font-size: 0;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper .swiper-slide .link-to-food .food-container img {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-wrapper .swiper-slide .link-to-food span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.13rem;
+  color: #666666;
+}
+
+#app .content > div > section.msite .msite-nav .swiper-container .swiper-pagination > span.swiper-pagination-bullet-active {
+  background: #02a774;
+}
+
+#app .content > div > section.msite .msite-shop-list {
+  position: relative;
+  margin-top: 0.1rem;
+  background: #ffffff;
+}
+
+#app .content > div > section.msite .msite-shop-list::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+#app .content > div > section.msite .shop-header {
+  padding: 0.1rem 0.1rem 0;
+}
+
+#app .content > div > section.msite .shop-header .shop-icon {
+  margin-left: 0.05rem;
+  color: #999999;
+}
+
+#app .content > div > section.msite .shop-header .shop-header-title {
+  color: #999999;
+  font-size: 0.14rem;
+  line-height: 0.2rem;
+}
+
+#app .content > div > section.msite .shop-container {
+  margin-bottom: 0.5rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li {
+  position: relative;
+  width: 100%;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.15rem 0.08rem;
+  width: 100%;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-left {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 23%;
+  height: 0.75rem;
+  padding-right: 0.1rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-left .shop-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right {
+  float: right;
+  width: 77%;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header {
+  width: 100%;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header .shop-title {
+  float: left;
+  width: 1.4rem;
+  color: #333333;
+  font-size: 0.16rem;
+  line-height: 0.16rem;
+  font-weight: 7rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header .shop-title::before {
+  content: '品牌';
+  display: inline-block;
+  font-size: 0.11rem;
+  line-height: 0.11rem;
+  color: #333333;
+  background-color: #ffd930;
+  padding: 0.02rem;
+  border-radius: 0.02rem;
+  margin-right: 0.05rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header .shop-detail-ul {
+  float: right;
+  margin-top: 0.03rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header .shop-detail-ul .supports {
+  float: left;
+  font-size: 0.1rem;
+  color: #999999;
+  border: 0.01rem solid #f1f1f1;
+  padding: 0 0.02rem;
+  border-radius: 0.02rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order {
+  width: 100%;
+  margin-top: 0.18rem;
+  margin-bottom: 0.08rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left {
+  float: left;
+  color: #ff9a0d;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star {
+  /* 2x图 3x图 */
+  float: left;
+  font-size: 0;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star .star-item {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item {
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-right: 0.22rem;
+  background-size: 0.2rem 0.2rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item:last-child {
+  margin-right: 0;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.on {
+  background-image: url("../images/star48_on@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.on {
+    background-image: url("../images/star48_on@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.half {
+  background-image: url("../images/star48_half@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.half {
+    background-image: url("../images/star48_half@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.off {
+  background-image: url("../images/star48_off@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-48 .star-item.off {
+    background-image: url("../images/star48_off@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item {
+  width: 0.15rem;
+  height: 0.15rem;
+  margin-right: 0.06rem;
+  background-size: 0.15rem 0.15rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item:last-child {
+  margin-right: 0;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.on {
+  background-image: url("../images/star36_on@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.on {
+    background-image: url("../images/star36_on@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.half {
+  background-image: url("../images/star36_half@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.half {
+    background-image: url("../images/star36_half@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.off {
+  background-image: url("../images/star36_off@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-36 .star-item.off {
+    background-image: url("../images/star36_off@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item {
+  width: 0.1rem;
+  height: 0.1rem;
+  margin-right: 0.03rem;
+  background-size: 0.1rem 0.1rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item:last-child {
+  margin-right: 0;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.on {
+  background-image: url("../images/star24_on@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.on {
+    background-image: url("../images/star24_on@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.half {
+  background-image: url("../images/star24_half@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.half {
+    background-image: url("../images/star24_half@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.off {
+  background-image: url("../images/star24_off@2x.png");
+}
+
+@media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .star.star-24 .star-item.off {
+    background-image: url("../images/star24_off@3x.png");
+  }
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .rating-section {
+  float: left;
+  font-size: 0.1rem;
+  color: #ff6000;
+  margin-right: 0.04rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-left .order-section {
+  float: left;
+  font-size: 0.1rem;
+  color: #666666;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-right {
+  float: right;
+  font-size: 0;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-right .delivery-style {
+  -webkit-transform-origin: 0.35rem 0;
+          transform-origin: 0.35rem 0;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  display: inline-block;
+  font-size: 0.12rem;
+  padding: 0.01rem;
+  border-radius: 0.02rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-right .delivery-left {
+  color: #ffffff;
+  margin-right: -0.1rem;
+  background-color: #02a774;
+  border: 1px solid #02a774;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order .shop-rating-order-right .delivery-right {
+  color: #02a774;
+  border: 1px solid #02a774;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance {
+  width: 100%;
+  font-size: 0.12rem;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance .shop-delivery-msg {
+  float: left;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: #666666;
+}
+
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance .shop-delivery-msg .segmentation {
+  color: #cccccc;
+}
