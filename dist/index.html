@@ -346,7 +346,179 @@
         </div>
       </section>
     </div>
+    <!-- 搜索 -->
+    <div>
+      <section class="search">
+        <header class="header">
+          <a class="header-title">搜索</a>
+        </header>
+        <form action="" class="search">
+          <input type="text" name="search" placeholder="请输入商家或美食名称" class="search-input">
+          <input type="submit" name="submit" class="search-submit">
+        </form>
+      </section>
+    </div>
+    <!-- 订单 -->
+    <div>
+      <section class="order">
+        <header class="header">
+          <a class="header-title">
+            <span class="header-title-text">订单列表</span>
+          </a>
+        </header>
+        <section class="order-no-login">
+          <img src="images/person.png" alt="">
+          <h3>登录后查看外卖订单</h3>
+          <button>立即登录</button>
+        </section>
+      </section>
+    </div>
+    <!-- 我的 -->
+    <div>
+      <section class="profile">
+        <header class="header">
+          <a class="header-title">我的</a>
+        </header>
+        <section class="profile-number">
+          <a href="javascript:void (0)" class="profile-link">
+            <div class="profile-image">
+              <i class="iconfont icon-person"></i>
+            </div>
+            <div class="user-info">
+              <p class="user-info-top">登录/注册</p>
+              <p>
+                <span class="user-icon">
+                  <i class="iconfont icon-shouji icon-mobile"></i>
+                </span>
+                <span class="icon-mobile-number">暂无绑定手机号</span>
+              </p>
+            </div>
+            <span class="arrow">
+              <i class="iconfont icon-jiantou1"></i>
+            </span>
+          </a>
+        </section>
+        <section class="profile-info-data border-1px">
+          <ul class="info-data-list">
+            <a href="javascript:void (0)" class="info-data-link">
+              <span class="info-data-top"><span>0.00</span>元</span>
+              <span class="info-data-bottom">我的余额</span>
+            </a>
+            <a href="javascript:void (0)" class="info-data-link">
+              <span class="info-data-top"><span>0</span>个</span>
+              <span class="info-data-bottom">我的优惠</span>
+            </a>
+            <a href="javascript:void (0)" class="info-data-link">
+              <span class="info-data-top"><span>0</span>分</span>
+              <span class="info-data-bottom">我的积分</span>
+            </a>
+          </ul>
+        </section>
+        <section class="profile-my-order border-1px">
+          <!-- 我的订单 -->
+          <a href="javascript:void (0)" class="my-order">
+            <span>
+              <i class="iconfont icon-order-s"></i>
+            </span>
+            <div class="my-order-div">
+              <span>我的订单</span>
+              <span class="my-order-icon">
+                <i class="iconfont icon-jiantou1"></i>
+              </span>
+            </div>
+          </a>
+          <!-- 积分商城 -->
+          <a href="javascript:void (0)" class="my-order">
+            <span>
+              <i class="iconfont icon-jifen"></i>
+            </span>
+            <div class="my-order-div">
+              <span>积分商城</span>
+              <span class="my-order-icon">
+                <i class="iconfont icon-jiantou1"></i>
+              </span>
+            </div>
+          </a>
+          <!-- 饿了么外卖会员卡 -->
+          <a href="javascript:void (0)" class="my-order">
+            <span>
+              <i class="iconfont icon-vip"></i>
+            </span>
+            <div class="my-order-div">
+              <span>饿了么外卖会员卡</span>
+              <span class="my-order-icon">
+                <i class="iconfont icon-jiantou1"></i>
+              </span>
+            </div>
+          </a>
+        </section>
+        <section class="profile-my-order border-1px">
+          <!-- 服务中心 -->
+          <a href="javascript:void (0)" class="my-order">
+            <span>
+              <i class="iconfont icon-fuwu"></i>
+            </span>
+            <div class="my-order-div">
+              <span>服务中心</span>
+              <span class="my-order-icon">
+                <i class="iconfont icon-jiantou1"></i>
+              </span>
+            </div>
+          </a>
+        </section>
+      </section>
+    </div>
   </section>
+  <!-- on表示显示，off表示关闭 -->
+  <div class="off">
+    <section class="loginContainer">
+      <div class="loginInner">
+        <div class="login-header">
+          <h2 class="login-logo">饿了么外卖</h2>
+          <div class="login-header-title">
+            <a href="javascript:void (0)" class="on">短信登录</a>
+            <a href="javascript:void (0)">密码登录</a>
+          </div>
+        </div>
+        <div class="login-content">
+          <form>
+            <div class="on">
+              <section class="login-message">
+                <input type="tel" maxlength="11" placeholder="手机号">
+                <button disabled="disabled" class="get-verification">获取验证码</button>
+              </section>
+              <section class="login-verification">
+                <input type="tel" maxlength="8" placeholder="验证码">
+              </section>
+              <section class="login-hint">
+                温馨提示：未注册饿了么外卖帐号的手机号，登录时将自动注册，且代表已同意
+                <a href="javascript:void (0);">《用户服务协议》</a>
+              </section>
+            </div>
+            <div>
+              <section>
+                <section class="login-message">
+                  <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名">
+                </section>
+                <section class="login-verification">
+                  <input type="tel" maxlength="8" placeholder="密码">
+                  <div class="switch-button off">
+                    <div class="switch-circle"></div>
+                    <span class="switch-text">...</span>
+                  </div>
+                </section>
+              </section>
+            </div>
+            <button class="login-submit">登录</button>
+          </form>
+          <a href="javascript:void (0)" class="about-us">关于我们</a>
+        </div>
+        <a href="javascript:void (0)" class="go-back">
+          <i class="iconfont icon-jiantou2"></i>
+        </a>
+      </div>
+    </section>
+  </div>
 
   <!-- 底部 -->
   <footer class="footer-guide border-1px">
