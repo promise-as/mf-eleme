@@ -17,15 +17,15 @@
 }
 
 /* 根据像素比来使用 2x 图 3x 图 */
-#app .content > div > section.msite .shop-container .shop-list .shop-li > a, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance {
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance, #app .content > div > section.search .search-form, #app .content > div > section.profile .profile-number .profile-link, #app .content > div > section.profile .profile-info-data .info-data-list {
   zoom: 1;
 }
 
-#app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after {
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after, #app .content > div > section.search .search-form::after, #app .content > div > section.profile .profile-number .profile-link::after, #app .content > div > section.profile .profile-info-data .info-data-list::after {
   clear: both;
 }
 
-#app .content > div > section.msite .shop-container .shop-list .shop-li > a::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after {
+#app .content > div > section.msite .shop-container .shop-list .shop-li > a::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::before, #app .content > div > section.search .search-form::before, #app .content > div > section.profile .profile-number .profile-link::before, #app .content > div > section.profile .profile-info-data .info-data-list::before, #app .content > div > section.msite .shop-container .shop-list .shop-li > a::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-detail-header::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-rating-order::after, #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance::after, #app .content > div > section.search .search-form::after, #app .content > div > section.profile .profile-number .profile-link::after, #app .content > div > section.profile .profile-info-data .info-data-list::after {
   content: '';
   display: table;
 }
@@ -107,6 +107,13 @@
   display: block;
 }
 
+#app .content > div > section {
+  /* 首页 */
+  /* 搜索 */
+  /* 订单 */
+  /* 我的 */
+}
+
 #app .content > div > section .header {
   /* 头部公共css */
   background-color: #02a774;
@@ -146,7 +153,6 @@
 }
 
 #app .content > div > section.msite {
-  /* 首页 */
   width: 100%;
 }
 
@@ -602,4 +608,494 @@
 
 #app .content > div > section.msite .shop-container .shop-list .shop-li > a .shop-right .shop-distance .shop-delivery-msg .segmentation {
   color: #cccccc;
+}
+
+#app .content > div > section.search {
+  width: 100%;
+}
+
+#app .content > div > section.search .search-form {
+  margin-top: 0.45rem;
+  background-color: #ffffff;
+  padding: 0.12rem 0.08rem;
+}
+
+#app .content > div > section.search .search-form input {
+  height: 0.35rem;
+  padding: 0 0.04rem;
+  border-radius: 0.02rem;
+  font-weight: bold;
+  outline: none;
+}
+
+#app .content > div > section.search .search-form input.search-input {
+  float: left;
+  width: 79%;
+  border: 0.04rem solid #f2f2f2;
+  font-size: 0.14rem;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+#app .content > div > section.search .search-form input.search-submit {
+  float: right;
+  width: 18%;
+  border: 0.04rem solid #02a774;
+}
+
+#app .content > div > section.order {
+  width: 100%;
+}
+
+#app .content > div > section.order .order-no-login {
+  padding-top: 1.4rem;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app .content > div > section.order .order-no-login > img {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+#app .content > div > section.order .order-no-login > h3 {
+  padding: 0.1rem 0;
+  font-size: 0.17rem;
+  color: #6a6a6a;
+}
+
+#app .content > div > section.order .order-no-login > button {
+  display: inline-block;
+  background: #02a774;
+  font-size: 0.14rem;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  border-radius: 0.05rem;
+  padding: 0.1rem 0.2rem;
+}
+
+#app .content > div > section.profile {
+  width: 100%;
+}
+
+#app .content > div > section.profile .profile-number {
+  margin-top: 0.455rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link {
+  position: relative;
+  display: block;
+  background: #02a774;
+  padding: 0.2rem 0.1rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .profile-image {
+  float: left;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .profile-image .icon-person {
+  background: #e4e4e4;
+  font-size: 0.62rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info {
+  float: left;
+  margin-top: 0.08rem;
+  margin-left: 0.15rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info p {
+  font-weight: 700;
+  font-size: 0.18rem;
+  color: #ffffff;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info p.user-info-top {
+  padding-bottom: 0.08rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info p .user-icon {
+  display: inline-block;
+  margin-left: -0.15rem;
+  margin-right: 0.05rem;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info p .user-icon .icon-mobile {
+  font-size: 0.3rem;
+  vertical-align: text-top;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .user-info p .icon-mobile-number {
+  font-size: 0.14rem;
+  color: #ffffff;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .arrow {
+  width: 0.12rem;
+  height: 0.12rem;
+  position: absolute;
+  right: 0.15rem;
+  top: 40%;
+}
+
+#app .content > div > section.profile .profile-number .profile-link .arrow .icon-jiantou1 {
+  color: #ffffff;
+  font-size: 0.05rem;
+}
+
+#app .content > div > section.profile .profile-info-data {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+#app .content > div > section.profile .profile-info-data::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link {
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-right: 0.01rem solid #f1f1f1;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link .info-data-top {
+  display: block;
+  width: 100%;
+  font-size: 0.14rem;
+  color: #333333;
+  padding: 0.15rem 0.05rem 0.1rem;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link .info-data-top span {
+  display: inline-block;
+  font-size: 0.3rem;
+  color: #ff9900;
+  font-weight: 7rem;
+  line-height: 0.3rem;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link .info-data-bottom {
+  display: inline-block;
+  font-size: 0.14rem;
+  color: #666666;
+  font-weight: 4rem;
+  padding-bottom: 0.1rem;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link:nth-of-type(2) .info-data-top span {
+  color: #ff5f3e;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link:nth-of-type(3) {
+  border: 0;
+}
+
+#app .content > div > section.profile .profile-info-data .info-data-list .info-data-link:nth-of-type(3) .info-data-top span {
+  color: #6ac20b;
+}
+
+#app .content > div > section.profile .profile-my-order {
+  position: relative;
+  margin-top: 0.1rem;
+  background: #ffffff;
+}
+
+#app .content > div > section.profile .profile-my-order::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.15rem;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span > .iconfont {
+  margin-left: -0.1rem;
+  font-size: 0.3rem;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span > .iconfont .icon-order-s {
+  color: #02a774;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span > .iconfont .icon-jifen {
+  color: #ff5f3e;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span > .iconfont .icon-vip {
+  color: #ff9900;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order > span > .iconfont .icon-fuwu {
+  color: #02a774;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order .my-order-div {
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0.18rem 0.1rem 0.18rem 0;
+  font-size: 0.16rem;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order .my-order-div span {
+  display: block;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order .my-order-div .my-order-icon {
+  width: 0.1rem;
+  height: 0.1rem;
+}
+
+#app .content > div > section.profile .profile-my-order .my-order .my-order-div .my-order-icon .icon-jiantou1 {
+  color: #bbbbbb;
+  font-size: 0.1rem;
+}
+
+#app > .off {
+  display: none;
+}
+
+#app > .on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+#app > .on .loginContainer {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+#app > .on .loginContainer .loginInner {
+  padding-top: 0.6rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#app > .on .loginContainer .loginInner .login-header .login-logo {
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: #02a774;
+  text-align: center;
+}
+
+#app > .on .loginContainer .loginInner .login-header .login-header-title {
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+#app > .on .loginContainer .loginInner .login-header .login-header-title > a {
+  color: #333333;
+  font-size: 0.14rem;
+  padding-bottom: 0.04rem;
+}
+
+#app > .on .loginContainer .loginInner .login-header .login-header-title > a:first-child {
+  margin-right: 0.4rem;
+}
+
+#app > .on .loginContainer .loginInner .login-header .login-header-title > a.on {
+  color: #02a774;
+  font-weight: 7rem;
+  border-bottom: 0.02rem solid #02a774;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div {
+  display: none;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div.on {
+  display: block;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div input {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.01rem solid #dddddd;
+  border-radius: 0.04rem;
+  outline: 0;
+  font: 4rem 0.14rem Arial;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div input:focus {
+  border: 0.01rem solid #02a774;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-message {
+  position: relative;
+  margin-top: 0.16rem;
+  height: 0.48rem;
+  font-size: 0.14rem;
+  background: #ffffff;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-message .get-verification {
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 0;
+  color: #cccccc;
+  font-size: 0.14rem;
+  background: transparent;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification {
+  position: relative;
+  margin-top: 0.16rem;
+  height: 0.48rem;
+  font-size: 0.14rem;
+  background: #ffffff;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification .switch-button {
+  font-size: 0.12rem;
+  border: 0.01rem solid #dddddd;
+  border-radius: 0.08rem;
+  -webkit-transition: background-color 0.3, border-color 0.3s;
+  transition: background-color 0.3, border-color 0.3s;
+  padding: 0 0.06rem;
+  width: 0.3rem;
+  height: 0.16rem;
+  line-height: 0.16rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification .switch-button.off {
+  background: #ffffff;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification .switch-button.off .switch-text {
+  float: right;
+  color: #dddddd;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification .switch-button.on {
+  background: #02a774;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-verification .switch-button > .switch-circle {
+  position: absolute;
+  top: -0.01rem;
+  left: -0.01rem;
+  width: 0.16rem;
+  height: 0.16rem;
+  border: 0.01rem solid #dddddd;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-hint {
+  margin-top: 0.12rem;
+  color: #999999;
+  font-size: 0.14rem;
+  line-height: 0.2rem;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form > div .login-hint > a {
+  color: #02a774;
+}
+
+#app > .on .loginContainer .loginInner .login-content > form .login-submit {
+  display: block;
+  width: 100%;
+  height: 0.42rem;
+  margin-top: 0.3rem;
+  border-radius: 0.04rem;
+  background: #4cd96f;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.16rem;
+  line-height: 0.42rem;
+  border: 0;
+}
+
+#app > .on .loginContainer .loginInner .login-content .about-us {
+  display: block;
+  font-size: 0.12rem;
+  margin-top: 0.2rem;
+  text-align: center;
+  color: #999999;
+}
+
+#app > .on .loginContainer .loginInner .go-back {
+  position: absolute;
+  top: 0.05rem;
+  left: 0.05rem;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+#app > .on .loginContainer .loginInner .go-back > .iconfont {
+  font-size: 0.2rem;
+  color: #999999;
 }
